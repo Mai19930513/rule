@@ -771,7 +771,7 @@
         "tag": "geosite-badiduAds",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/baidu-ads.srs",
+        "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/baidu-ads.srs",
         "download_detour": "🎯 全球直连"
       },
       {
