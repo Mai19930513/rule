@@ -663,7 +663,7 @@
       },
       {
         "rule_set": [
-          "geosite-badiduAdsdu"
+          "geosite-badiduAds"
         ],
         "outbound": "block-out"
       }
