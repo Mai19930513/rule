@@ -354,7 +354,7 @@
       ]
     },
     {
-      "tag": "🇸🇬 新加坡节点",
+      "tag": "🇸🇬新加坡节点",
       "type": "selector",
       "outbounds": [
         "{all}"
