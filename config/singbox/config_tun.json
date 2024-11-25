@@ -95,7 +95,6 @@
             ],
             "mtu": 9000,
             "auto_route": true,
-            "sniff": true,
             "endpoint_independent_nat": false,
             "stack": "system",
             "platform": {
@@ -110,7 +109,6 @@
             "type": "mixed",
             "listen": "127.0.0.1",
             "listen_port": 2080,
-            "sniff": true,
             "sniff_override_destination": false,
             "set_system_proxy": false,
             "users": []
@@ -255,7 +253,8 @@
                 "🇨🇦加拿大节点",
                 "🇩🇪德国节点",
                 "🇬🇧英国节点",
-                "🐸 手动切换"
+                "🐸 手动切换",
+                "🎯 全球直连"
             ]
         },
         {
@@ -556,10 +555,6 @@
         {
             "tag": "🎯 全球直连",
             "type": "direct"
-        },
-        {
-            "tag": "dns-out",
-            "type": "dns"
         }
     ],
     "route": {
@@ -567,17 +562,11 @@
         "final": "🚀 节点选择",
         "rules": [
             {
-                "type": "logical",
-                "mode": "or",
-                "rules": [
-                    {
-                        "port": 53
-                    },
-                    {
-                        "protocol": "dns"
-                    }
-                ],
-                "outbound": "dns-out"
+                "action": "sniff"
+            },
+            {
+                "protocol": "dns",
+                "action": "hijack-dns"
             },
             {
                 "protocol": "quic",
