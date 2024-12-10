@@ -371,21 +371,6 @@
             ]
         },
         {
-            "tag": "🇲🇾马来西亚节点",
-            "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇲🇾|MY|my|马来西亚"
-                    ]
-                }
-            ]
-        },
-        {
             "tag": "🇹🇼台湾节点",
             "type": "selector",
             "outbounds": [
