@@ -574,6 +574,15 @@
                 "outbound": "🎯 全球直连"
             },
             {
+                "domain_suffix":[
+                    ".short.weixin.qq.com", 
+                    ".extshort.weixin.qq.com", 
+                    ".dns.weixin.qq.com.cn", 
+                    "long.weixin.qq.com"
+                ],
+            "outbound": "🍀 Google"
+            }
+            {
                 "rule_set": [
                     "geosite-private",
                     "geoip-private"
