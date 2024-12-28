@@ -581,7 +581,7 @@
                     "long.weixin.qq.com"
                 ],
             "outbound": "🍀 Google"
-            }
+            },
             {
                 "rule_set": [
                     "geosite-private",
