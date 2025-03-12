@@ -603,15 +603,6 @@
           },
           {
             "action": "route",
-            "domain_suffix": [
-              "short.weixin.qq.com",
-              "dns.weixin.qq.com.cn",
-              "long.weixin.qq.com"
-            ],
-            "outbound": "🍀 Google"
-          },
-          {
-            "action": "route",
             "rule_set": [
               "geosite-private",
               "geoip-private"
