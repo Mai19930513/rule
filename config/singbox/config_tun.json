@@ -47,6 +47,10 @@
       {
         "tag": "block-dns",
         "address": "rcode://name_error"
+      },
+      {
+        "package_name": ["com.samsung.android.sskds"],
+        "server": "🎯 全球直连"
       }
     ],
     "rules": [
@@ -687,7 +691,11 @@
           {
             "rule_set": "geosite-badiduAds",
             "action": "reject"
-          }
+          },
+          {
+        "package_name": ["com.samsung.android.sskds"],
+        "outbound": "🎯 全球直连"
+        }        
         ],
         "rule_set": [
           {
