@@ -47,10 +47,6 @@
       {
         "tag": "block-dns",
         "address": "rcode://name_error"
-      },
-      {
-        "package_name": ["com.samsung.android.sskds"],
-        "server": "🎯 全球直连"
       }
     ],
     "rules": [
@@ -103,6 +99,10 @@
           "AAAA"
         ],
         "rewrite_ttl": 1
+      },
+        {
+        "package_name": ["com.samsung.android.sskds"],
+        "server": "🎯 全球直连"
       }
     ],
     "fakeip": {
