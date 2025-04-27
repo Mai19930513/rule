@@ -18,6 +18,8 @@
         }
     },
     "dns": {
+    "disable_cache": false,
+    "cache_size": 4096,
     "servers": [
       {
         "tag": "fakeip-dns",
@@ -140,7 +142,7 @@
             "route_address": [],
             "endpoint_independent_nat": false,
             "auto_sleep": true,
-            "auto_sleep_timeout": 30
+            "auto_sleep_timeout": 30,
             "stack": "mixed"
           }
     ],
