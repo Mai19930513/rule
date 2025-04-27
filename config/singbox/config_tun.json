@@ -18,7 +18,6 @@
         }
     },
     "dns": {
-    "disable_cache": false,
     "servers": [
       {
         "tag": "fakeip-dns",
