@@ -139,8 +139,6 @@
             "strict_route": false,
             "route_address": [],
             "endpoint_independent_nat": false,
-            "auto_sleep": true,
-            "auto_sleep_timeout": 30,
             "stack": "mixed"
           }
     ],
