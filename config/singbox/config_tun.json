@@ -692,6 +692,10 @@
             "rule_set": "geosite-badiduAds",
             "action": "reject"
           },
+            {
+                "rule_set": "geosite-anti-AD",
+                "action": "reject"
+            },
           {
         "package_name": ["com.samsung.android.sskds"],
         "outbound": "🎯 全球直连"
@@ -801,6 +805,13 @@
             "type": "remote",
             "format": "binary",
             "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/baidu-ads.srs",
+            "download_detour": "🚀 节点选择"
+          },
+            {
+            "tag": "geosite-anti-AD",
+            "type": "remote",
+            "format": "binary",
+            "url": "https://anti-ad.net/anti-ad-sing-box.srs",
             "download_detour": "🚀 节点选择"
           },
           {
