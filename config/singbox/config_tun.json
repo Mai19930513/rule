@@ -20,51 +20,48 @@
   "dns": {
     "servers": [
       {
-        "tag": "fakeip-dns",
-        "address": "fakeip"
+        "type": "https",
+        "tag": "aliDns",
+        "server": "223.5.5.5",
+        "path": "/dns-query",
+        "tls": {
+          "server_name": "dns.alidns.com"
+        }
+      },
+      {
+        "type": "fakeip",
+        "tag": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
       },
       {
         "tag": "googleDns",
-        "address": "tls://8.8.8.8",
-        "address_resolver": "defaultDns",
-        "address_strategy": "ipv4_only",
-        "detour": "🚀 节点选择",
-        "client_subnet": "1.0.1.0"
+        "type": "tls",
+        "server": "8.8.8.8",
+        "domain_resolver": "aliDns"
       },
       {
-        "tag": "localDns",
-        "address": "https://223.5.5.5/dns-query",
-        "address_resolver": "defaultDns",
-        "address_strategy": "ipv4_only",
-        "detour": "🎯 全球直连"
-      },
-      {
-        "tag": "defaultDns",
-        "address": "https://223.5.5.5/dns-query",
-        "address_strategy": "ipv4_only",
-        "detour": "🎯 全球直连"
-      },
-      {
-        "tag": "block-dns",
-        "address": "rcode://name_error"
+        "type": "local",
+        "tag": "local"
       }
     ],
     "rules": [
       {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
+      },
+      {
         "action": "route",
-        "outbound": "any",
-        "server": "defaultDns",
+        "server": "aliDns",
         "disable_cache": true
       },
       {
         "action": "route",
-        "query_type": "HTTPS",
-        "server": "block-dns"
-      },
-      {
-        "action": "route",
         "clash_mode": "direct",
-        "server": "localDns"
+        "server": "aliDns"
       },
       {
         "action": "route",
@@ -77,7 +74,7 @@
           "geosite-cn",
           "geoip-cn"
         ],
-        "server": "localDns"
+        "server": "aliDns"
       },
       {
         "type": "logical",
@@ -110,12 +107,7 @@
         "server": "🎯 全球直连"
       }
     ],
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "final": "localDns",
+    "final": "aliDns",
     "strategy": "ipv4_only",
     "disable_expire": false,
     "disable_cache": false,
@@ -577,6 +569,11 @@
     }
   ],
   "route": {
+    "default_domain_resolver": {
+      "server": "local",
+      "rewrite_ttl": 60,
+      "client_subnet": "1.1.1.1"
+    },
     "auto_detect_interface": true,
     "final": "🚀 节点选择",
     "rules": [
