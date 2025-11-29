@@ -7,10 +7,11 @@
   "experimental": {
     "cache_file": {
       "enabled": true,
-      "store_rdrc": true
+      "store_rdrc": true,
+      "store_fakeip": true
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:9095",
+      "external_controller": "127.0.0.1:9090",
       "secret": "",
       "external_ui_download_url": "https://ghp.ci/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "🎯 全球直连",
@@ -127,16 +128,24 @@
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "",
+      "interface_name": "tun0",
       "address": [
         "172.18.0.1/30"
       ],
-      "mtu": 9000,
+      "mtu": 1500,
       "auto_route": true,
-      "strict_route": false,
+      "strict_route": true,
       "route_address": [],
       "endpoint_independent_nat": false,
-      "stack": "mixed"
+      "stack": "mixed",
+      "sniff": true,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 2080
+        }
+      }
     }
   ],
   "outbounds": [
