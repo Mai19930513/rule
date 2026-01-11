@@ -34,7 +34,7 @@
       {
         "domain": ["mtalk.google.com",
           "fcm.googleapis.com"],
-        "server": "public"
+        "server": "foreign"
       },
       {
         "rule_set": "geosite-cn",
@@ -758,7 +758,9 @@
         "server": "127.0.0.1",
         "server_port": 7890
       }
-    }
+    },
+    tcp_keep_alive_idle": 30,
+    "tcp_keep_alive_interval": 30 
   },
     {
       "type": "mixed",
