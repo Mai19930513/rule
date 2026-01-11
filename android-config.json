@@ -32,6 +32,11 @@
         "server": "fakeip"
       },
       {
+        "domain": ["mtalk.google.com",
+          "fcm.googleapis.com"],
+        "server": "public"
+      },
+      {
         "rule_set": "geosite-cn",
         "server": "local"
       },
