@@ -1,0 +1,2 @@
+# 说明
+sing-box自用模板配置,android开头为android使用模板,win开头为windows使用模板
