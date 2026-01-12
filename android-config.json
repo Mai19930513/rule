@@ -39,9 +39,17 @@
           "mtalk.google.com",
           "alt1-mtalk.google.com",
           "alt2-mtalk.google.com",
-          "fcm.googleapis.com"
+          "alt3-mtalk.google.com",
+          "alt4-mtalk.google.com",
+          "alt5-mtalk.google.com",
+          "alt6-mtalk.google.com",
+          "alt7-mtalk.google.com",
+          "alt8-mtalk.google.com",
+          "fcm.googleapis.com",
+          "fcm.google.com",
+          "fcm-xmpp.googleapis.com"
         ],
-        "server": "local"
+        "server": "foreign"
       },
       {
         "rule_set": "geosite-cn",
@@ -484,24 +492,44 @@
           "alt7-mtalk.google.com",
           "alt8-mtalk.google.com"
         ],
+        "port": [
+          5228,
+          5229,
+          5230
+        ],
+        "outbound": "🍀 Google"
+      },
+      {
         "domain_suffix": [
           "fcm.googleapis.com",
           "fcm.google.com",
           "fcm-xmpp.googleapis.com"
         ],
+        "port": [
+          5228,
+          5229,
+          5230
+        ],
         "outbound": "🍀 Google"
       },
       {
+        "domain_suffix": [
+          "google.com",
+          "googleapis.com",
+          "gstatic.com",
+          "mtalk.google.com",
+          "fcm.googleapis.com",
+          "fcm-xmpp.googleapis.com"
+        ],
         "port": 443,
         "network": "udp",
-        "action": "reject"
+        "outbound": "🍀 Google"
       },
       {
         "action": "sniff",
         "sniffer": [
           "http",
           "tls",
-          "quic",
           "dns"
         ]
       },
@@ -794,6 +822,7 @@
       ],
       "stack": "mixed",
       "auto_route": true,
+      "mtu": 1400,
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -823,7 +852,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "debug",
     "timestamp": true
   }
 }
