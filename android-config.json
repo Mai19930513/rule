@@ -32,9 +32,13 @@
         "server": "fakeip"
       },
       {
-        "domain": ["mtalk.google.com",
-          "fcm.googleapis.com"],
-        "server": "foreign"
+        "domain": [
+          "mtalk.google.com",
+          "alt1-mtalk.google.com",
+          "alt2-mtalk.google.com",
+          "fcm.googleapis.com"
+        ],
+        "server": "local"
       },
       {
         "rule_set": "geosite-cn",
@@ -456,7 +460,9 @@
           "alt8-mtalk.google.com"
         ],
         "domain_suffix": [
-          "fcm.googleapis.com"
+          "fcm.googleapis.com",
+          "fcm.google.com",
+          "fcm-xmpp.googleapis.com"
         ],
         "outbound":"🎯 全球直连"
       },
