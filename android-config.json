@@ -824,13 +824,6 @@
       "stack": "gvisor",
       "auto_route": true,
       "mtu": 9000,
-      "exclude_package": [
-        "com.android.captiveportallogin",
-        "com.android.systemui"
-      ],
-      "include_package": [
-        "com.google.android.gms"
-      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
