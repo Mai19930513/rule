@@ -523,7 +523,7 @@
         ],
         "port": 443,
         "network": "udp",
-        "outbound": "🍀 Google"
+        "outbound": "🎯 全球直连"
       },
       {
         "action": "sniff",
