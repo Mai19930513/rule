@@ -475,8 +475,8 @@
     {
       "tag": "🎯 全球直连",
       "type": "direct",
-      "tcp_keep_alive":"5m",
-      "tcp_keep_alive_interval": "25s"
+      "tcp_keep_alive":"6m",
+      "tcp_keep_alive_interval": "300s"
     }
   ],
   "route": {
