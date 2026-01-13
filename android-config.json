@@ -816,13 +816,21 @@
   "inbounds": [
     {
       "type": "tun",
+      "tag": "tun-in",
       "address": [
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
       ],
-      "stack": "mixed",
+      "stack": "system",
       "auto_route": true,
-      "mtu": 1400,
+      "mtu": 9000,
+      "exclude_package": [
+        "com.android.captiveportallogin",
+        "com.android.systemui"
+      ],
+      "include_package": [
+        "com.google.android.gms"
+      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -852,7 +860,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "debug",
+    "level": "info",
     "timestamp": true
   }
 }
