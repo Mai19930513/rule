@@ -501,7 +501,7 @@
     {
       "tag": "🎯 全球直连",
       "type": "direct",
-      "tcp_keep_alive": "40s",
+      "tcp_keep_alive": "3m",
       "tcp_keep_alive_interval": "15s"
     }],
   "route": {
