@@ -552,11 +552,6 @@
       },
       {
         "rule_set":"geosite-googlefcm",
-        "port": [
-          5228,
-          5229,
-          5230
-        ],
         "outbound":"🎯 全球直连"
       },
       {
