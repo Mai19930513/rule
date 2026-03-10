@@ -71,10 +71,14 @@
       "type": "selector",
       "outbounds": [
         "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇺🇲 美国手动",
         "🇹🇼 台湾手动",
+        "🇹🇼 台湾自动",
         "🇨🇦 加拿大手动",
         "🇩🇪 德国手动",
         "🇬🇧 英国手动",
@@ -90,6 +94,7 @@
         "🇯🇵 日本手动",
         "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇺🇲 美国手动",
         "🇭🇰 香港手动",
         "🇭🇰 香港自动",
@@ -106,6 +111,7 @@
         "🇯🇵 日本手动",
         "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇺🇲 美国手动",
         "🇹🇼 台湾手动",
         "🇹🇼 台湾自动",
@@ -121,6 +127,7 @@
         "🇯🇵 日本手动",
         "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇺🇲 美国手动",
         "🇹🇼 台湾手动",
         "🇹🇼 台湾自动",
@@ -136,6 +143,7 @@
         "🇭🇰 香港手动",
         "🇭🇰 香港自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇺🇲 美国手动",
         "🐸 手动选择",
         "🇹🇼 台湾手动",
@@ -147,6 +155,7 @@
       "type": "selector",
       "outbounds": [
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇭🇰 香港手动",
         "🇭🇰 香港自动",
         "🇯🇵 日本手动",
@@ -162,7 +171,11 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇺🇲 美国手动",
         "🐸 手动选择"
       ]
@@ -171,9 +184,12 @@
       "tag": "🎥 Netflix",
       "type": "selector",
       "outbounds": [
-        "🇭🇰 香港手动",
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇺🇲 美国手动",
         "🐸 手动选择"
       ]
@@ -182,9 +198,12 @@
       "tag": "💶 PayPal",
       "type": "selector",
       "outbounds": [
-        "🇭🇰 香港手动",
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇺🇲 美国手动",
         "🐸 手动选择",
         "🎯 全球直连"
@@ -194,9 +213,12 @@
       "tag": "🎮 Steam",
       "type": "selector",
       "outbounds": [
-        "🇭🇰 香港手动",
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇺🇲 美国手动",
         "🐸 手动选择",
         "🎯 全球直连"
@@ -207,7 +229,11 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇺🇲 美国手动",
         "🐸 手动选择",
         "🎯 全球直连"
@@ -218,7 +244,11 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇺🇲 美国手动",
         "🐸 手动选择",
         "🎯 全球直连"
@@ -229,10 +259,14 @@
       "type": "selector",
       "outbounds": [
         "🎯 全球直连",
-        "🇭🇰 香港手动",
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
-        "🇺🇲 美国手动"
+        "🇸🇬 狮城自动",
+        "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
+        "🇺🇲 美国手动",
+        "🐸 手动选择"
       ]
     },
     {
@@ -330,6 +364,27 @@
     {
       "tag": "🇸🇬 狮城手动",
       "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "新加坡|坡|狮城|SG|Singapore"
+          ]
+        },
+        {
+          "action": "exclude",
+          "keywords": [
+            "免费"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇸🇬 狮城自动",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
@@ -503,31 +558,20 @@
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
-        "🚀 默认代理",
-        "🧠 AI",
-        "📹 YouTube",
-        "🍀 Google",
-        "👨‍💻 Github",
-        "📲 Telegram",
-        "🎵 TikTok",
-        "🎥 Netflix",
-        "💶 PayPal",
-        "🎮 Steam",
-        "🪟 Microsoft",
-        "🐬 OneDrive",
-        "🍏 Apple",
-        "🐠 漏网之鱼",
         "🇭🇰 香港手动",
+        "🇭🇰 香港自动",
         "🇯🇵 日本手动",
+        "🇯🇵 日本自动",
         "🇸🇬 狮城手动",
+        "🇸🇬 狮城自动",
         "🇺🇲 美国手动",
         "🇹🇼 台湾手动",
+        "🇹🇼 台湾自动",
         "🇨🇦 加拿大手动",
         "🇩🇪 德国手动",
         "🇬🇧 英国手动",
         "🐸 手动选择",
         "♻️ 自动选择",
-        "🍃 延迟辅助",
         "🎯 全球直连"
       ]
     },
@@ -543,10 +587,17 @@
       {
         "action": "sniff",
         "sniffer": [
-          "http",
-          "tls",
-          "dns"
-        ]
+          "tls"
+        ],
+        "timeout": "1s"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "action": "route",
+        "outbound": "🎯 全球直连",
+        "sniffer": false
       },
       {
         "type": "logical",
@@ -593,6 +644,10 @@
         "outbound": "GLOBAL"
       },
       {
+        "rule_set": "geosite-googlefcm",
+        "outbound": "🎯 全球直连"
+      },
+      {
         "package_name": [
           "com.android.vending"
         ],
@@ -606,10 +661,6 @@
           "googleusercontent.com"
         ],
         "outbound": "🍀 Google"
-      },
-      {
-        "rule_set": "geosite-googlefcm",
-        "outbound": "🎯 全球直连"
       },
       {
         "domain_suffix": [
@@ -882,7 +933,7 @@
       ],
       "stack": "system",
       "auto_route": true,
-      "mtu": 9000,
+      "mtu": 1400,
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -898,10 +949,6 @@
     }
   ],
   "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "store_fakeip": true
-    },
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
       "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
@@ -912,7 +959,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "warn",
     "timestamp": true
   }
 }
