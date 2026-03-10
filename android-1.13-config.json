@@ -584,20 +584,17 @@
   ],
   "route": {
     "rules": [
+       {
+        "rule_set": ["geosite-cn","geoip-cn"],
+        "action": "route",
+        "outbound": "🎯 全球直连"
+      },
       {
         "action": "sniff",
         "sniffer": [
           "tls"
         ],
         "timeout": "1s"
-      },
-      {
-        "rule_set": [
-          "geosite-cn"
-        ],
-        "action": "route",
-        "outbound": "🎯 全球直连",
-        "sniffer": false
       },
       {
         "type": "logical",
@@ -729,10 +726,6 @@
         "outbound": "🚀 默认代理"
       },
       {
-        "rule_set": "geosite-cn",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "action": "resolve"
       },
       {
@@ -750,10 +743,6 @@
       {
         "rule_set": "geoip-netflix",
         "outbound": "🎥 Netflix"
-      },
-      {
-        "rule_set": "geoip-cn",
-        "outbound": "🎯 全球直连"
       }
     ],
     "rule_set": [

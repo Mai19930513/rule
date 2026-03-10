@@ -39,16 +39,16 @@
         "action": "reject"
       },
       {
-        "rule_set": "geosite-fakeipfilter",
-        "server": "local"
-      },
-      {
         "query_type": [
           "A",
           "AAAA"
         ],
         "server": "fakeip",
         "rewrite_ttl": 1
+      },
+      {
+        "rule_set": "geosite-fakeipfilter",
+        "server": "local"
       },
       {
         "rule_set": "geosite-cn",
@@ -581,11 +581,16 @@
   "route": {
     "rules": [
       {
+        "rule_set": ["geosite-cn","geoip-cn"],
+        "action": "route",
+        "outbound": "🎯 全球直连"
+      },
+      {
         "action": "sniff",
         "sniffer": [
-          "http",
           "tls"
-        ]
+        ],
+        "timeout": "1s"
       },
       {
         "type": "logical",
@@ -669,10 +674,6 @@
         "outbound": "🚀 默认代理"
       },
       {
-        "rule_set": "geosite-cn",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "action": "resolve"
       },
       {
@@ -690,10 +691,6 @@
       {
         "rule_set": "geoip-netflix",
         "outbound": "🎥 Netflix"
-      },
-      {
-        "rule_set": "geoip-cn",
-        "outbound": "🎯 全球直连"
       }
     ],
     "rule_set": [
@@ -864,7 +861,7 @@
         "10.0.0.0/8",
         "172.16.0.0/12"
       ],
-      "mtu": 1500,
+      "mtu": 1400,
       "stack": "system",
       "auto_route": true,
       "strict_route": true
