@@ -575,8 +575,11 @@
   ],
   "route": {
     "rules": [
-       {
-        "rule_set": ["geosite-cn","geoip-cn"],
+      {
+        "rule_set": [
+          "geosite-cn",
+          "geoip-cn"
+        ],
         "action": "route",
         "outbound": "🎯 全球直连"
       },
@@ -614,7 +617,7 @@
       },
       {
         "rule_set": "geosite-googlefcm",
-        "outbound": "🍀 Google"
+        "outbound": "🎯 全球直连"
       },
       {
         "package_name": [
@@ -673,6 +676,10 @@
       {
         "rule_set": "geosite-steam",
         "outbound": "🎮 Steam"
+      },
+      {
+        "rule_set": "geosite-reddit",
+        "outbound": "🍀 Google"
       },
       {
         "rule_set": "geosite-!cn",
@@ -816,6 +823,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-reddit",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/reddit.srs",
         "download_detour": "🎯 全球直连"
       },
       {
