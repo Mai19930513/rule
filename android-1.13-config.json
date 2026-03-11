@@ -576,14 +576,6 @@
   "route": {
     "rules": [
       {
-        "rule_set": [
-          "geosite-cn",
-          "geoip-cn"
-        ],
-        "action": "route",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "action": "sniff",
         "sniffer": [
           "tls"
@@ -684,6 +676,14 @@
       {
         "rule_set": "geosite-!cn",
         "outbound": "🚀 默认代理"
+      },
+      {
+        "rule_set": [
+          "geosite-cn",
+          "geoip-cn"
+        ],
+        "action": "route",
+        "outbound": "🎯 全球直连"
       },
       {
         "action": "resolve"
