@@ -15,7 +15,7 @@
         "tag": "foreign",
         "type": "https",
         "server": "8.8.8.8",
-        "detour": "🚀 默认代理"
+        "detour": "♻️ 自动选择"
       },
       {
         "tag": "fakeip",
@@ -546,14 +546,6 @@
       "tolerance": 100
     },
     {
-      "tag": "🍃 延迟辅助",
-      "type": "urltest",
-      "outbounds": [
-        "🚀 默认代理",
-        "🎯 全球直连"
-      ]
-    },
-    {
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
@@ -609,25 +601,6 @@
         "action": "hijack-dns"
       },
       {
-        "domain": [
-          "mtalk.google.com",
-          "alt1-mtalk.google.com",
-          "alt2-mtalk.google.com",
-          "alt3-mtalk.google.com",
-          "alt4-mtalk.google.com",
-          "alt5-mtalk.google.com",
-          "alt6-mtalk.google.com",
-          "alt7-mtalk.google.com",
-          "alt8-mtalk.google.com"
-        ],
-        "port": [
-          5228,
-          5229,
-          5230
-        ],
-        "outbound": "🎯 全球直连"
-      },
-      {
         "ip_is_private": true,
         "outbound": "🎯 全球直连"
       },
@@ -641,30 +614,11 @@
       },
       {
         "rule_set": "geosite-googlefcm",
-        "outbound": "🎯 全球直连"
+        "outbound": "🍀 Google"
       },
       {
         "package_name": [
           "com.android.vending"
-        ],
-        "outbound": "🍀 Google"
-      },
-      {
-        "domain_suffix": [
-          "googleapis.com",
-          "firebaseinstallations.googleapis.com",
-          "gstatic.com",
-          "googleusercontent.com"
-        ],
-        "outbound": "🍀 Google"
-      },
-      {
-        "domain_suffix": [
-          "gvt1.com",
-          "gvt2.com",
-          "gvt3.com",
-          "xn--ngstr-lra8j.com",
-          "googlevideo.com"
         ],
         "outbound": "🍀 Google"
       },

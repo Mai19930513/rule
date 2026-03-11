@@ -15,7 +15,7 @@
         "tag": "foreign",
         "type": "https",
         "server": "8.8.8.8",
-        "detour": "🚀 默认代理"
+        "detour": "♻️ 自动选择"
       },
       {
         "tag": "fakeip",
@@ -540,14 +540,6 @@
       ],
       "interval": "10m",
       "tolerance": 100
-    },
-    {
-      "tag": "🍃 延迟辅助",
-      "type": "urltest",
-      "outbounds": [
-        "🚀 默认代理",
-        "🎯 全球直连"
-      ]
     },
     {
       "tag": "GLOBAL",
