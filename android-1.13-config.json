@@ -616,14 +616,14 @@
         "outbound": "GLOBAL"
       },
       {
-        "rule_set": "geosite-googlefcm",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "package_name": [
           "com.android.vending"
         ],
         "outbound": "🍀 Google"
+      },
+       {
+        "rule_set": "geosite-googlefcm",
+        "outbound": "🎯 全球直连"
       },
       {
         "rule_set": "geosite-ai",
