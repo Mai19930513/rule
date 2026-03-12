@@ -1,11 +1,10 @@
 {
   "dns": {
-    "servers": [
-      {
-        "tag": "local",
-        "type": "udp",
-        "server": "223.5.5.5"
-      },
+    "servers": [{
+      "tag": "local",
+      "type": "udp",
+      "server": "223.5.5.5"
+    },
       {
         "tag": "public",
         "type": "https",
@@ -22,13 +21,11 @@
         "type": "fakeip",
         "inet4_range": "198.18.0.0/15",
         "inet6_range": "fc00::/18"
-      }
-    ],
-    "rules": [
-      {
-        "clash_mode": "direct",
-        "server": "local"
-      },
+      }],
+    "rules": [{
+      "clash_mode": "direct",
+      "server": "local"
+    },
       {
         "clash_mode": "global",
         "server": "fakeip"
@@ -56,36 +53,34 @@
         ],
         "server": "fakeip",
         "rewrite_ttl": 1
-      }
-    ],
+      }],
     "final": "foreign",
     "client_subnet": "223.5.5.0/24",
     "strategy": "ipv4_only",
     "independent_cache": true,
     "reverse_mapping": true
   },
-  "outbounds": [
-    {
-      "tag": "🚀 默认代理",
-      "type": "selector",
-      "outbounds": [
-        "🇭🇰 香港手动",
-        "🇭🇰 香港自动",
-        "🇯🇵 日本手动",
-        "🇯🇵 日本自动",
-        "🇸🇬 狮城手动",
-        "🇸🇬 狮城自动",
-        "🇺🇲 美国手动",
-        "🇹🇼 台湾手动",
-        "🇹🇼 台湾自动",
-        "🇨🇦 加拿大手动",
-        "🇩🇪 德国手动",
-        "🇬🇧 英国手动",
-        "🇮🇳 印度手动",
-        "🐸 手动选择",
-        "♻️ 自动选择"
-      ]
-    },
+  "outbounds": [{
+    "tag": "🚀 默认代理",
+    "type": "selector",
+    "outbounds": [
+      "🇭🇰 香港手动",
+      "🇭🇰 香港自动",
+      "🇯🇵 日本手动",
+      "🇯🇵 日本自动",
+      "🇸🇬 狮城手动",
+      "🇸🇬 狮城自动",
+      "🇺🇲 美国手动",
+      "🇹🇼 台湾手动",
+      "🇹🇼 台湾自动",
+      "🇨🇦 加拿大手动",
+      "🇩🇪 德国手动",
+      "🇬🇧 英国手动",
+      "🇮🇳 印度手动",
+      "🐸 手动选择",
+      "♻️ 自动选择"
+    ]
+  },
     {
       "tag": "🧠 AI",
       "type": "selector",
@@ -282,20 +277,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇭🇰|HK|hk|香港|港|HongKong"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇭🇰|HK|hk|香港|港|HongKong"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇭🇰 香港自动",
@@ -303,20 +296,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇭🇰|HK|hk|香港|港|HongKong"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇭🇰|HK|hk|香港|港|HongKong"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇯🇵 日本手动",
@@ -324,20 +315,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇯🇵|JP|jp|日本|日|Japan"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇯🇵|JP|jp|日本|日|Japan"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇯🇵 日本自动",
@@ -345,20 +334,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇯🇵|JP|jp|日本|日|Japan"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇯🇵|JP|jp|日本|日|Japan"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇸🇬 狮城手动",
@@ -366,20 +353,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "新加坡|坡|狮城|SG|Singapore"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "新加坡|坡|狮城|SG|Singapore"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇸🇬 狮城自动",
@@ -387,20 +372,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "新加坡|坡|狮城|SG|Singapore"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "新加坡|坡|狮城|SG|Singapore"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇺🇲 美国手动",
@@ -408,20 +391,18 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇺🇸|US|us|美国|美|United States"
-          ]
-        },
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇺🇸|US|us|美国|美|United States"
+        ]
+      },
         {
           "action": "exclude",
           "keywords": [
             "AUS|RUS|免费"
           ]
-        }
-      ]
+        }]
     },
     {
       "tag": "🇹🇼 台湾手动",
@@ -429,14 +410,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇹🇼|台湾|TW|tw"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇹🇼|台湾|TW|tw"
+        ]
+      }]
     },
     {
       "tag": "🇹🇼 台湾自动",
@@ -444,14 +423,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇹🇼|台湾|TW|tw"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇹🇼|台湾|TW|tw"
+        ]
+      }]
     },
     {
       "tag": "🇨🇦 加拿大手动",
@@ -459,14 +436,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇨🇦|加拿大|Canada"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇨🇦|加拿大|Canada"
+        ]
+      }]
     },
     {
       "tag": "🇩🇪 德国手动",
@@ -474,14 +449,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇩🇪|德国"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇩🇪|德国"
+        ]
+      }]
     },
     {
       "tag": "🇬🇧 英国手动",
@@ -489,14 +462,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇬🇧|英国"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇬🇧|英国"
+        ]
+      }]
     },
     {
       "tag": "🇮🇳 印度手动",
@@ -504,14 +475,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": [
-            "🇮🇳|印度"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "include",
+        "keywords": [
+          "🇮🇳|印度"
+        ]
+      }]
     },
     {
       "tag": "🐸 手动选择",
@@ -519,14 +488,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"
-          ]
-        }
-      ]
+      "filter": [{
+        "action": "exclude",
+        "keywords": [
+          "网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"
+        ]
+      }]
     },
     {
       "tag": "♻️ 自动选择",
@@ -534,14 +501,12 @@
       "outbounds": [
         "{all}"
       ],
-      "filter": [
-        {
-          "action": "exclude",
-          "keywords": [
-            "官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"
-          ]
-        }
-      ],
+      "filter": [{
+        "action": "exclude",
+        "keywords": [
+          "官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"
+        ]
+      }],
       "interval": "10m",
       "tolerance": 100
     },
@@ -571,28 +536,24 @@
       "type": "direct",
       "tcp_keep_alive": "120s",
       "tcp_keep_alive_interval": "15s"
-    }
-  ],
+    }],
   "route": {
-    "rules": [
-      {
-        "action": "sniff",
-        "sniffer": [
-          "tls"
-        ],
-        "timeout": "1s"
-      },
+    "rules": [{
+      "action": "sniff",
+      "sniffer": [
+        "tls"
+      ],
+      "timeout": "1s"
+    },
       {
         "type": "logical",
         "mode": "or",
-        "rules": [
-          {
-            "port": 53
-          },
+        "rules": [{
+          "port": 53
+        },
           {
             "protocol": "dns"
-          }
-        ],
+          }],
         "action": "hijack-dns"
       },
       {
@@ -613,7 +574,18 @@
         ],
         "outbound": "🍀 Google"
       },
-       {
+      {
+        "domain": [
+          "fcm.googleapis.com",
+          "accounts.google.com",
+          "iid.googleapis.com",
+          "android.apis.google.com",
+          "device-provisioning.googleapis.com",
+          "firebaseinstallations.googleapis.com"
+        ],
+        "outbound": "🍀 Google"
+      },
+      {
         "rule_set": "geosite-googlefcm",
         "outbound": "🎯 全球直连"
       },
@@ -703,16 +675,14 @@
       {
         "rule_set": "geoip-netflix",
         "outbound": "🎥 Netflix"
-      }
-    ],
-    "rule_set": [
-      {
-        "tag": "geosite-fakeipfilter",
-        "type": "remote",
-        "format": "source",
-        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/fakeipfilter.json",
-        "download_detour": "🎯 全球直连"
-      },
+      }],
+    "rule_set": [{
+      "tag": "geosite-fakeipfilter",
+      "type": "remote",
+      "format": "source",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/fakeipfilter.json",
+      "download_detour": "🎯 全球直连"
+    },
       {
         "tag": "geosite-ai",
         "type": "remote",
@@ -866,44 +836,41 @@
         "format": "binary",
         "url": "https://gh-proxy.com/https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs",
         "download_detour": "🎯 全球直连"
-      }
-    ],
+      }],
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
     "default_domain_resolver": {
       "server": "public"
     }
   },
-  "inbounds": [
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "address": [
-        "172.19.0.0/30",
-        "fdfe:dcba:9876::0/126"
-      ],
-      "route_exclude_address": [
-        "192.168.0.0/16",
-        "10.0.0.0/8",
-        "172.16.0.0/12"
-      ],
-      "stack": "system",
-      "auto_route": true,
-      "mtu": 1400,
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 7890
-        }
+  "inbounds": [{
+    "type": "tun",
+    "tag": "tun-in",
+    "address": [
+      "172.19.0.0/30",
+      "fdfe:dcba:9876::0/126"
+    ],
+    "route_exclude_address": [
+      "192.168.0.0/16",
+      "10.0.0.0/8",
+      "172.16.0.0/12"
+    ],
+    "stack": "system",
+    "auto_route": true,
+    "mtu": 1400,
+    "platform": {
+      "http_proxy": {
+        "enabled": true,
+        "server": "127.0.0.1",
+        "server_port": 7890
       }
-    },
+    }
+  },
     {
       "type": "mixed",
       "listen": "127.0.0.1",
       "listen_port": 7890
-    }
-  ],
+    }],
   "experimental": {
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
