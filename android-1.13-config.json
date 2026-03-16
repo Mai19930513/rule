@@ -90,7 +90,7 @@
       "filter": [{
         "action": "include",
         "keywords": [
-          "GPT|gpt"
+          "GPT|gpt|Gemini|gemini"
         ]
       }]
     },
