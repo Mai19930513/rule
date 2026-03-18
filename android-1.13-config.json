@@ -624,6 +624,10 @@
         "outbound": "🎵 TikTok"
       },
       {
+        "rule_set": "geosite-oracle",
+        "outbound": "🎯 全球直连"
+      },
+      {
         "rule_set": "geosite-netflix",
         "outbound": "🎥 Netflix"
       },
@@ -793,6 +797,13 @@
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "download_detour": "🎯 全球直连"
       },
+  {
+        "tag": "geosite-oracle",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/oracle.srs",
+        "download_detour": "🎯 全球直连"
+      },
       {
         "tag": "geosite-reddit",
         "type": "remote",
@@ -800,7 +811,6 @@
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/reddit.srs",
         "download_detour": "🎯 全球直连"
       },
-      
       {
         "tag": "geoip-google",
         "type": "remote",
