@@ -637,7 +637,7 @@
       },
       {
         "rule_set": "geosite-steamcn",
-        "outbound": "🎯 全球直连" 
+        "outbound": "🎯 全球直连"
       },
       {
         "rule_set": "geosite-steam",
@@ -797,7 +797,7 @@
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "download_detour": "🎯 全球直连"
       },
-  {
+      {
         "tag": "geosite-oracle",
         "type": "remote",
         "format": "binary",
