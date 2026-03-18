@@ -633,7 +633,7 @@
       },
       {
         "rule_set": "geosite-steamcn",
-        "outbound": "🎯 全球直连"
+        "outbound": "🎯 全球直连"  
       },
       {
         "rule_set": "geosite-steam",
@@ -642,6 +642,10 @@
       {
         "rule_set": "geosite-reddit",
         "outbound": "🍀 Google"
+      },
+      {
+        "rule_set": "geosite-oracle",
+        "outbound": "🎯 全球直连"
       },
       {
         "rule_set": "geosite-!cn",
@@ -798,6 +802,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/reddit.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-oracle",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/oracle.srs",
         "download_detour": "🎯 全球直连"
       },
       {
