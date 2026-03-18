@@ -633,7 +633,7 @@
       },
       {
         "rule_set": "geosite-steamcn",
-        "outbound": "🎯 全球直连"  
+        "outbound": "🎯 全球直连" 
       },
       {
         "rule_set": "geosite-steam",
