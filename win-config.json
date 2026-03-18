@@ -668,6 +668,10 @@
         "outbound": "🍀 Google"
       },
       {
+        "rule_set": "geosite-oracle",
+        "outbound": "🎯 全球直连"
+      },
+      {
         "rule_set": "geosite-!cn",
         "outbound": "🚀 默认代理"
       },
@@ -809,6 +813,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/reddit.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-oracle",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/oracle.srs",
         "download_detour": "🎯 全球直连"
       },
       {
