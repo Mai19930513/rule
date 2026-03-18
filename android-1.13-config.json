@@ -644,10 +644,6 @@
         "outbound": "🍀 Google"
       },
       {
-        "rule_set": "geosite_oracle",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "rule_set": "geosite-!cn",
         "outbound": "🚀 默认代理"
       },
