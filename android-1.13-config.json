@@ -800,13 +800,7 @@
         "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/reddit.srs",
         "download_detour": "🎯 全球直连"
       },
-      {
-        "tag": "geosite_oracle",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/oracle.srs",
-        "download_detour": "🎯 全球直连"
-      },
+      
       {
         "tag": "geoip-google",
         "type": "remote",
