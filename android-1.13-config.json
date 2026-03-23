@@ -8,7 +8,8 @@
       {
         "tag": "public",
         "type": "https",
-        "server": "223.5.5.5"
+        "server": "223.5.5.5",
+        "detour": "🎯 全球直连"
       },
       {
         "tag": "foreign",
@@ -23,9 +24,13 @@
         "inet6_range": "fc00::/18"
       }],
     "rules": [{
-      "clash_mode": "direct",
-      "server": "local"
+      "protocol": "dns",
+      "server": "local" // 内部 DNS 请求（如 DNS-over-HTTPS 的域名解析）走本地
     },
+      {
+        "clash_mode": "direct",
+        "server": "local"
+      },
       {
         "clash_mode": "global",
         "server": "fakeip"
@@ -539,10 +544,24 @@
     "rules": [{
       "action": "sniff",
       "sniffer": [
-        "tls"
+        "tls",
+        "http"
       ],
       "timeout": "1s"
     },
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "domain_suffix": [
+          "cnmjin.net",
+          "mojcn.com",
+          "mojcn.net",
+          "cnmjcn.cyou"
+        ],
+        "outbound": "🎯 全球直连"
+      },
       {
         "type": "logical",
         "mode": "or",
@@ -856,8 +875,7 @@
     "type": "tun",
     "tag": "tun-in",
     "address": [
-      "172.19.0.0/30",
-      "fdfe:dcba:9876::0/126"
+      "172.19.0.0/30"
     ],
     "route_exclude_address": [
       "192.168.0.0/16",
@@ -866,7 +884,7 @@
     ],
     "stack": "gvisor",
     "auto_route": true,
-    "mtu": 1400,
+    "mtu": 1280,
     "platform": {
       "http_proxy": {
         "enabled": true,
