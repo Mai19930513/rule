@@ -875,12 +875,8 @@
     "type": "tun",
     "tag": "tun-in",
     "address": [
-<<<<<<< refs/remotes/origin/master
-      "172.19.0.0/30"
-=======
       "172.19.0.0/30",
       "fdfe:dcba:9876::1/126"
->>>>>>> 修改
     ],
     "route_exclude_address": [
       "192.168.0.0/16",
@@ -890,10 +886,7 @@
     "stack": "gvisor",
     "auto_route": true,
     "mtu": 1280,
-<<<<<<< refs/remotes/origin/master
-=======
     "strict_route": true,
->>>>>>> 修改
     "platform": {
       "http_proxy": {
         "enabled": true,
