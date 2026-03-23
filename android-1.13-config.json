@@ -25,7 +25,7 @@
       }],
     "rules": [{
       "protocol": "dns",
-      "server": "local" // 内部 DNS 请求（如 DNS-over-HTTPS 的域名解析）走本地
+      "server": "local"
     },
       {
         "clash_mode": "direct",
