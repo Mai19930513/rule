@@ -24,9 +24,18 @@
         "inet6_range": "fc00::/18"
       }],
     "rules": [{
-      "protocol": "dns",
-      "server": "local"
+      "domain_suffix": [
+        "cnmjin.net",
+        "mojcn.com",
+        "mojcn.net",
+        "cnmjcn.cyou"
+      ],
+      "server":"local"
     },
+      {
+        "protocol": "dns",
+        "server": "local"
+      },
       {
         "clash_mode": "direct",
         "server": "local"
