@@ -519,8 +519,9 @@
           "官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"
         ]
       }],
-      "interval": "10m",
-      "tolerance": 100
+      "interval": "2m",
+      "tolerance": 100,
+      "idle_timeout": "10m"
     },
     {
       "tag": "GLOBAL",
@@ -546,6 +547,7 @@
     {
       "tag": "🎯 全球直连",
       "type": "direct",
+      "domain_strategy": "ipv4_only",
       "tcp_keep_alive": "120s",
       "tcp_keep_alive_interval": "15s"
     }],
